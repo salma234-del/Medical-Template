@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: Open Sans,sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #8ea0ae; }
+  a:hover {
+    color: #8ea0ae; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  font-size: 12.5px;
+  font-weight: 50px;
+  color: #8ea0ae;
+  border-bottom: 1px solid #ededed; }
+
+.header-left {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0; }
+  .header-left li {
+    padding: 10px; }
+  .header-left li:nth-child(1), .header-left li:nth-child(2) {
+    border-right: 1px solid #d1dee9; }
+
+.nav-item {
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: bold; }
+  .nav-item:hover {
+    background-color: #2d529f; }
+  .nav-item .nav-link {
+    color: #2d529f; }
+
+.carousel-caption h2 {
+  font-size: 40px;
+  font-weight: bold; }
+
+.carousel-caption p {
+  font-size: 20px;
+  font-weight: bold; }
+
+.carousel-caption span {
+  font-size: 20px;
+  border-bottom: 3px solid white; }
+
+.h2-text {
+  font-weight: 400px;
+  font-size: 35px; }
+
+.span-text {
+  font-size: 20px;
+  color: #6c757d; }
+
+.p-text {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #6c757d; }
+
+.aboutUs {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 25px 60px 0px;
+  width: 100%;
+  max-height: 2000px; }
+  .aboutUs img {
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05); }
+
+.btn {
+  border: 2px solid #242424;
+  padding: 10px 30px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  outline: none;
+  background-color: white;
+  font-size: 13px;
+  font-weight: bold; }
+  .btn:hover {
+    color: white;
+    background-color: #242424; }
+
+.dep {
+  width: 100%;
+  max-height: 1400px;
+  background-color: #f4f4f4;
+  padding-top: 80px; }
+  .dep h4 {
+    color: #008fe2; }
+  .dep .dep-item {
+    margin: 30px 0px 10px 0px; }
+  .dep img {
+    margin-right: 30px; }
+
+.doctors {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  width: 100%;
+  max-height: 2000px; }
+  .doctors .doc-card {
+    border: 1px solid #ededed; }
+    .doctors .doc-card:hover img {
+      transform: scale(1.1); }
+    .doctors .doc-card:hover .doc-data {
+      background-color: #008fe2; }
+      .doctors .doc-card:hover .doc-data span, .doctors .doc-card:hover .doc-data h6 {
+        color: white; }
+  .doctors .doc-data {
+    padding-top: 60px; }
+    .doctors .doc-data span {
+      color: #6c757d; }
+    .doctors .doc-data h6 {
+      color: #242424;
+      font-weight: bold; }
+  .doctors img {
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in; }
+
+.homeRes {
+  width: 100%;
+  max-height: 2000px;
+  background-color: #f4f4f4;
+  padding-top: 60px;
+  padding-bottom: 40px; }
+  .homeRes img {
+    margin: 40px 0 25px 0; }
+  .homeRes .restext {
+    padding-left: 30px; }
+  .homeRes h6 {
+    color: black;
+    font-weight: bold; }
+  .homeRes .resCard:hover {
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05); }
+  .homeRes .bt {
+    padding-top: 30px; }
+
+.Insurance {
+  width: 100%;
+  max-height: 2000px;
+  padding-top: 60px;
+  padding-bottom: 40px; }
+  .Insurance img {
+    padding-top: 40px; }
+
+.ghon {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  width: 100%;
+  max-height: 1000px;
+  background-color: #28488c;
+  color: white; }
+  .ghon i {
+    padding: 15px; }
+  .ghon .firsti {
+    border: 1px solid white;
+    border-radius: 50%; }
+  .ghon h5 {
+    padding: 20px;
+    font-weight: bold; }
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  width: 100%;
+  max-height: 2000px;
+  background-color: #34383d; }
+  .footer p {
+    opacity: 0.8;
+    color: white;
+    font-size: 25px; }
+  .footer h6 {
+    color: white;
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: normal; }
+    .footer h6 s {
+      opacity: 1;
+      color: white; }
+  .footer .tle {
+    font-size: 30px; }
+
+.bottom-footer {
+  width: 100%;
+  max-height: 200px;
+  background-color: #34383d;
+  border-top: 1px solid #53585e;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .bottom-footer span {
+    color: white;
+    font-size: 12px; }
+
+.pagesheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-height: 200px;
+  background-color: #008fe2; }
+  .pagesheader h4 {
+    color: white;
+    font-size: 35px; }
+  .pagesheader p, .pagesheader sapn {
+    color: white;
+    opacity: 0.65;
+    font-size: 18px; }
+  .pagesheader a {
+    color: white; }
+  .pagesheader span {
+    color: white;
+    opacity: 0.65; }
+
+.contact {
+  width: 100%;
+  max-height: 1400px;
+  background-color: white;
+  padding-top: 80px;
+  border-bottom: 1px solid #ededed; }
+  .contact .contact-item {
+    margin: 0px 0px 10px 0px; }
+  .contact img {
+    margin-right: 30px; }
+  .contact a {
+    color: #008fe2; }
+
+.map {
+  width: 100%;
+  max-height: 1100px;
+  margin-top: 50px;
+  margin-bottom: 70px; }
+
+.blue-btn {
+  border: none;
+  padding: 10px;
+  margin: 20px;
+  background-color: #008fe2;
+  outline: none;
+  color: white; }
+  .blue-btn:hover {
+    background-color: #17aaff; }
+
+.contactform input, .contactform textarea {
+  outline: none;
+  width: 450px;
+  border: 1px solid #ededed;
+  padding: 10px;
+  margin: 20px; }
+
+.resources {
+  margin: 70px 0 50px 0;
+  width: 100%;
+  max-height: 2000px; }
+
+.h3-btext {
+  color: #008fe2;
+  margin-top: 5px; }
+
+.moreresnav li {
+  margin-bottom: 20px;
+  padding: 5px;
+  border-bottom: 1px solid #ededed; }
+  .moreresnav li:hover {
+    color: #008fe2; }
+
+.res-active {
+  color: #6c757d;
+  font-weight: bold; }
+
+.bringli h5 {
+  font-weight: bold;
+  margin-bottom: 40px; }
+
+.bringli p {
+  margin-bottom: 20px;
+  color: #6c757d; }
+  .bringli p i {
+    color: #008fe2;
+    margin-right: 5px; }
+
+.about {
+  margin: 60px 0px 0px 0px;
+  max-height: 5000px; }
+  .about .counter-section {
+    margin: 10px 0 0 0;
+    max-height: 2000px; }
+    .about .counter-section .counter-num {
+      font-size: 55px;
+      color: #008fe2;
+      font-weight: bold; }
+  .about p {
+    font-size: 20px;
+    font-weight: normal;
+    color: #6c757d; }
+
+.options li {
+  padding: 10px; }
+
+.options li:hover {
+  cursor: pointer; }
+
+.options i {
+  padding: 8px;
+  background-color: #008fe2;
+  color: white;
+  margin-right: 8px; }
+
+.options span {
+  font-size: 15px;
+  font-weight: bold; }
+
+.options p {
+  margin-top: 10px;
+  margin-left: 8px; }
+
+.hide {
+  display: none; }
+
+.health {
+  width: 100%;
+  height: 200px;
+  background-color: #f4f4f4; }
+  .health h4 {
+    font-weight: bold; }

@@ -1,0 +1,481 @@
+// reset
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Open Sans,sans-serif;;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+//varaibles
+$btn-color: #008fe2;
+$btn2-color: #242424;
+$gray-color: #8ea0ae;
+$btnbg-color: #2d529f;
+$text-color: #6c757d;
+$bg-color: #f4f4f4;
+$light-color: white;
+
+//mixin
+@mixin link($color){
+    text-decoration: none;
+    color: $color;
+}
+
+//link
+a{
+    @include link($gray-color);
+    &:hover{
+        color: $gray-color;
+    }
+}
+
+//start of header
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-color;
+    font-size: 12.5px;
+    font-weight: 50px;
+    color: $gray-color;
+    border-bottom: 1px solid #ededed;
+}
+.header-left{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    li{
+        padding: 10px;
+    }
+    li:nth-child(1),li:nth-child(2){
+        border-right: 1px solid #d1dee9;
+    }
+}
+//end of header
+
+//start navbar
+
+// .nav-btn{
+//     padding: 5px;
+//     margin: 5px;
+//     font-size: 12px;
+//     font-weight: bold;
+//     &:hover{
+//         background-color: $btnbg-color;
+//     }
+//     a.nav-link{
+//         color: $btnbg-color;
+//     }
+    
+// }
+
+.nav-item{
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px; 
+    font-weight: bold;
+    &:hover{
+        background-color: $btnbg-color;
+    }
+    .nav-link{
+        color: $btnbg-color;
+    }
+}
+
+//end navbar
+
+// start slider
+.carousel-caption{
+    h2{ 
+        font-size: 40px;  
+        font-weight: bold;      
+    }    
+    p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    span{
+        font-size: 20px; 
+        border-bottom: 3px solid $light-color; 
+    }
+}
+
+// end slider
+
+
+// start about us
+.h2-text{
+    font-weight: 400px;
+        font-size: 35px;
+}
+.span-text{
+        font-size: 20px;
+        color: $text-color;
+}
+.p-text{
+    margin-top: 30px; 
+    margin-bottom: 40px;
+    color: $text-color;
+}
+.aboutUs{ 
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 25px 60px 0px;
+    width: 100%;      
+    max-height: 2000px;
+    img{
+        box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
+    }
+}
+.btn{
+    border: 2px solid #242424;
+    padding: 10px 30px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    outline: none;
+    background-color: $light-color;
+    font-size: 13px;
+    font-weight: bold;
+    &:hover{
+        color: $light-color; 
+        background-color: #242424; ;
+    }
+}
+// end about us
+
+// start departments
+.dep{
+    width: 100%;
+    max-height: 1400px;
+    background-color: $bg-color; 
+    padding-top: 80px;
+    h4{
+        color: $btn-color;
+        
+    }
+    .dep-item{
+        margin: 30px 0px 10px 0px; 
+    }
+    img{
+        margin-right: 30px;
+    }
+}
+
+// end departments
+
+// start doctors
+.doctors{
+    padding-top: 50px;
+    padding-bottom: 60px;  
+    width: 100%;
+    max-height: 2000px;
+    .doc-card{  
+        border:  1px solid #ededed; 
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+            .doc-data{
+                background-color: $btn-color;
+                span,h6{
+                    color: $light-color;
+                }   
+            }
+        }     
+    }
+    .doc-data{
+        padding-top: 60px;    
+        span{ 
+            color: $text-color;
+        }
+        h6{
+            color: $btn2-color;  
+            font-weight: bold;
+        }
+    }
+    img{
+        transform-origin: 0 0;
+        transition: transform .25s, visibility .25s ease-in; 
+    }
+}
+
+
+// end doctors
+// star resources
+.homeRes{
+    width: 100%;
+    max-height: 2000px;
+    background-color: $bg-color;
+    padding-top: 60px;
+    padding-bottom: 40px; 
+    img{
+        margin: 40px 0 25px 0; 
+    }
+    .restext{
+        padding-left: 30px; 
+    }
+    h6{
+        color: black; 
+        font-weight: bold;
+    }
+    .resCard:hover{
+        box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
+    }
+    .bt{
+        padding-top: 30px;
+    }
+}
+// end resources
+
+// start Insurance
+.Insurance{
+    width: 100%;
+    max-height: 2000px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    img{
+        padding-top: 40px;    
+    }
+}
+// end Insurance
+
+// start ghon smith
+.ghon{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 100%;
+    max-height: 1000px;    
+    background-color: #28488c;
+    color: white;
+    i{
+        padding: 15px;   
+    }
+    .firsti{
+        border: 1px solid white;
+        border-radius: 50%;
+    } 
+    h5{
+        padding: 20px;
+        font-weight: bold;
+        // border-top: 2px solid #80c9f2; 
+    }
+}
+
+// end ghon smith
+
+// start footer
+.footer{
+    padding-top: 70px;
+    padding-bottom: 90px; 
+    width: 100%;
+    max-height: 2000px;
+    background-color: #34383d;
+    p{
+        opacity: 0.8;
+        color: $light-color;
+        font-size: 25px;
+    } 
+    h6{
+        color: $light-color;
+        opacity: 0.5;
+        font-size: 12px;
+        font-weight: normal; 
+        s{  
+            opacity: 1;
+            color: $light-color; 
+        }  
+    }    
+    .tle{
+        font-size: 30px; 
+    }
+}
+// end footer
+
+// start bottom footer
+.bottom-footer{
+    width: 100%;
+    max-height: 200px;
+    background-color: #34383d; 
+    border-top: 1px solid #53585e;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    span{
+        color: $light-color;
+        font-size: 12px; 
+    }
+}
+
+// end bottom footer
+
+
+
+// contact page
+.pagesheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    background-color: $btn-color; 
+    h4{
+        color: $light-color;
+        font-size: 35px;
+    }
+    p,sapn{
+        color: $light-color;
+        opacity: 0.65;
+        font-size: 18px;
+    }
+    a{
+        color: $light-color;
+    }
+    span{
+        color: $light-color;
+        opacity: 0.65; 
+    }
+} 
+.contact{
+    width: 100%;
+    max-height: 1400px;
+    background-color: $light-color; 
+    padding-top: 80px; 
+    border-bottom: 1px solid #ededed;
+    .contact-item{
+        margin: 0px 0px 10px 0px;   
+    }
+    img{
+        margin-right: 30px;
+    }
+    a{
+        color: $btn-color;
+    }
+}
+.map{
+    width: 100%;
+    max-height: 1100px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.blue-btn{
+    border: none;
+    padding: 10px;
+    margin:20px;
+    background-color: $btn-color;
+    outline: none;
+    color: white; 
+    &:hover{
+        background-color: #17aaff;
+    }
+}
+.contactform{
+    input,textarea{
+        outline: none;
+        width: 450px;
+        border: 1px solid #ededed; 
+        padding: 10px;
+        margin: 20px;
+    }
+}
+
+// resourses page
+
+.resources{
+    margin: 70px 0 50px 0;
+    width: 100%;
+    max-height: 2000px;
+}
+
+.h3-btext{
+    color: $btn-color;
+    margin-top: 5px;
+}
+
+// more resources
+.moreresnav{
+    li{
+        margin-bottom: 20px;
+        padding: 5px;
+        border-bottom: 1px solid #ededed;
+        &:hover{
+            color: $btn-color;
+        }
+    }  
+}
+.res-active{
+    color: $text-color;
+    font-weight: bold;
+}
+.bringli{
+    h5{
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    p{
+        // padding: 10px;
+        margin-bottom: 20px;
+        color: $text-color;
+        i{
+            color: $btn-color;
+            margin-right: 5px;
+        }
+    }
+}
+
+// about us page
+.about{
+    margin: 60px 0px 0px 0px;   
+    max-height: 5000px; 
+.counter-section{
+    margin: 10px 0 0 0;   
+    max-height: 2000px;  
+    .counter-num{
+        font-size: 55px;
+        color: $btn-color;
+        font-weight: bold ; 
+    }  
+} 
+    p{
+        font-size: 20px;
+        font-weight: normal;
+        color: $text-color; 
+    }
+} 
+.options{
+    li{
+        padding: 10px;
+    }
+    li:hover{
+        cursor: pointer;
+    }
+    i{
+        padding: 8px;
+        background-color: $btn-color;
+        color: $light-color;
+        margin-right: 8px; 
+    }
+    span{
+        font-size: 15px; 
+        font-weight: bold;
+    }
+    p{
+        margin-top: 10px; 
+        margin-left: 8px;
+    }
+}
+.hide{
+    display: none; 
+}
+.health{
+    width: 100%;
+    height: 200px;
+    background-color: $bg-color;
+    h4{
+        font-weight: bold;
+    }
+}
